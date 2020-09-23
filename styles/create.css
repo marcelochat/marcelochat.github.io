@@ -1,0 +1,27 @@
+body {
+    background: url('https://media.giphy.com/media/2Fazad9Hs5xPAF6iQ/giphy.gif');
+    background-size: cover;
+}
+
+.aviso{
+    font-family: 'Roboto Mono', monospace;
+}
+
+button {
+    background-color: rgb(43, 125, 231);
+}
+
+button:hover {
+    background: url('https://media.giphy.com/media/j4f2zONOeJVUk/giphy.gif');
+    font-size: 24px;
+}
+
+.clearBtn {
+    position: absolute;
+    top: 0;
+    right: -15px;
+    transition: right 0.2s;
+}
+.show {
+    right: 5px;
+}

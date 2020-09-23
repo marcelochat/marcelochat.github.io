@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcelo Chat - Login</title>
+
+    <!-- FAVICON IMPORT -->
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+
+    <!-- GLOBAL CSS IMPORT -->
+    <link rel="stylesheet" href="./styles/global.css">
+
+    <!-- PAGE CSS IMPORT -->
+    <link rel="stylesheet" href="./styles/welcome.css">
+
+    <!-- FONT IMPORTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@700&display=swap" rel="stylesheet">
+
+    <!-- SCRIPT IMPORTS -->
+    <script src="./scripts/main.js"></script>
+</head>
+<body>
+    <div class="content" style="justify-content: center;">
+        <form action="">
+            <div class="pageHeader" style="display: flex; justify-content: center; align-items: center;">
+                <a href="" style="text-decoration: none; color: black; font-size: 57px; font-family: 'Noto Sans', sans-serif;" onclick="creditos()">Marcelo Chat</a>
+                <div class="foo visuallyhidden" id="authorNameDiv" style="transition: .7s;">
+                    <h3 style="margin-left: 5px; font-family: 'Josefin Sans'">Por</h3>
+                    <h3 style="margin-left: 5px; font-family: 'Josefin Sans', sans-serif; color: red;">Igor Duca</h3></h3>
+                </div>
+            </div>
+
+            <h2 style="margin-top: 15px; font-family: 'Roboto Mono', monospace;">Quem é você?</h2>
+
+            <div class="usernameForm">
+                <input type="text" placeholder="Nome de usuário">
+            </div>
+
+            <div class="passwordForm" style="margin-top: 30px;">
+                <input type="text" placeholder="Senha">
+            </div>
+            
+            <div class="loginConfirm" style="display: flex; justify-content: center; margin-top: 30px;">
+                <button>Login</button>
+            </div>
+
+            <div class="createAccount" style="margin-top: 15px; font-family: 'Roboto Mono', monospace;">
+                <a href="./Pages/create.html" style="text-decoration: none; color: purple;">Ainda não tem uma conta?</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

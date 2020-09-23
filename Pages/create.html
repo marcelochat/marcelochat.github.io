@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcelo Chat - Criar conta</title>
+
+    <!-- FAVICON IMPORT -->
+    <link rel="shortcut icon" href="../assets/icon.png" type="image/x-icon">
+
+    <!-- GLOBAL CSS IMPORT -->
+    <link rel="stylesheet" href="../styles/global.css">
+
+    <!-- FONT IMPORTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@700&display=swap" rel="stylesheet">
+
+    <!-- ICON IMPORT -->
+    <link href='https://css.gg/eye-alt.css' rel='stylesheet'>
+
+    <!-- PAGE CSS IMPORT -->
+    <link rel="stylesheet" href="../styles/create.css">
+
+    <!-- JQUERRY IMPORT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- IMPORTING SCRIPT -->
+    <script src="../scripts/create.js"></script>
+</head>
+<body>
+    <div class="content">
+        <form action="">
+            <h1>Crie sua conta</h1>
+            <h3 class="aviso" style="font-size: 14px;">Aviso: O criador do site poderá facilmente excluir sua conta</h3>
+
+            <div class="inputsDiv" style="margin-top: 30px;">
+                <input type="text" placeholder="Primeiro nome" id="firstName">
+
+                <input type="text" placeholder="Último nome" id="lastName">
+
+                <input type="text" placeholder="Nome de usuário" id="username">
+
+                <input type="password" placeholder="Senha" style="margin-top: 15px;" id="password">
+            </div>
+
+            <div class="buttonDiv" style="display: flex; justify-content: center; margin-top: 30px;">
+                <button onclick="create()">Criar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
