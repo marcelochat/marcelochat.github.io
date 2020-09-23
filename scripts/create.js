@@ -11,10 +11,10 @@ function create() {
 
     event.preventDefault()
 
-    firstName = document.getElementById('firstName').value
-    lastName = document.getElementById('lastName').value
-    username = document.getElementById('username').value
-    password = document.getElementById('password').value
+    const firstName = document.getElementById('firstName').value
+    const lastName = document.getElementById('lastName').value
+    const username = document.getElementById('username').value
+    const password = document.getElementById('password').value
 
     const userInfo = {
         firstName: firstName,
