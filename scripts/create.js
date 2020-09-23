@@ -23,7 +23,9 @@ function create() {
         password: password
     }
 
-    fetch('https://marcelochat.herokuapp.com/')
+    fetch('https://marcelochat.herokuapp.com/', {
+        mode: 'no-cors'
+    })
     .then(res => res.json())
     .then(resp => {
         console.log(resp)
