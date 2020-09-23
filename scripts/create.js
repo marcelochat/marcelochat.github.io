@@ -24,14 +24,15 @@ function create() {
     }
 
     const config = {
-        mode: 'no-cors',
-        body: {
-            "pass":"@ifcbk10001!-"
+        method: "POST",
+        mode: "no-cors",
+        body: {userInfo},
+        headers: {
+            "Content-Type":"application/json"
         }
     }
-    
 
-    fetch('https://marcelochat.herokuapp.com/consultacc', config)
+    fetch('https://marcelochat.herokuapp.com/create', config)
     .then(res => res.json())
     .then(resp => {
         console.log(resp)
