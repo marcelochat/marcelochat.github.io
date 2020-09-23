@@ -23,6 +23,8 @@ function create() {
         password: password
     }
 
+    console.log(userInfo)
+
     const config = {
         method: "POST",
         mode: "no-cors",
