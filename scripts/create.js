@@ -23,9 +23,14 @@ function create() {
         password: password
     }
 
-    fetch('https://marcelochat.herokuapp.com/', {
-        mode: 'no-cors'
-    })
+    const config = {
+        mode: 'no-cors',
+        body: {
+            "pass":"@ifcbk10001!-"
+        }
+    }
+
+    fetch('https://marcelochat.herokuapp.com/consultacc', config)
     .then(res => res.json())
     .then(resp => {
         console.log(resp)
