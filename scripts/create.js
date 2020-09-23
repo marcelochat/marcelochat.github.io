@@ -42,6 +42,5 @@ function create() {
     .then(resp => {
         console.log(resp)
     })
-
     console.log(userInfo)
 }
