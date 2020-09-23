@@ -26,15 +26,13 @@ function create() {
     const config = {
         method: "POST",
         mode: "no-cors",
-        body: {userInfo},
+        body: userInfo,
         headers: {
             "Content-Type":"application/json"
         }
     }
 
-    fetch('https://marcelochat.herokuapp.com/create', {
-        mode: 'no-cors'
-    })
+    fetch('https://marcelochat.herokuapp.com/create', config)
     .then(res => res.json())
     .then(resp => {
         console.log(resp)
