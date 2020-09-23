@@ -32,7 +32,9 @@ function create() {
         }
     }
 
-    fetch('https://marcelochat.herokuapp.com/create', config)
+    fetch('https://marcelochat.herokuapp.com/create', {
+        mode: 'no-cors'
+    })
     .then(res => res.json())
     .then(resp => {
         console.log(resp)
