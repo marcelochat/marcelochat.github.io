@@ -23,24 +23,9 @@ function create() {
         password: password
     }
 
-    var config = {
-        mode: 'no-cors',
-        method: 'GET',
-        headers: {
-            "Content-Type":"application/json"
-        },
-        body: userInfo
-    }
-
-    var iconfig = {
-        method: "GET",
-        mode: "no-cors"
-    }
-
-    fetch('https://marcelochat.herokuapp.com/',iconfig)
+    fetch('https://marcelochat.herokuapp.com/')
     .then(res => res.json())
     .then(resp => {
         console.log(resp)
     })
-    console.log(userInfo)
 }
